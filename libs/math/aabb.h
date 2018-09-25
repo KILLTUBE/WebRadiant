@@ -196,16 +196,16 @@ inline unsigned int aabb_oriented_classify_plane( const AABB& aabb, const Matrix
 }
 
 inline void aabb_corners( const AABB& aabb, Vector3 corners[8] ){
-	Vector3 min( vector3_subtracted( aabb.origin, aabb.extents ) );
-	Vector3 max( vector3_added( aabb.origin, aabb.extents ) );
-	corners[0] = Vector3( min[0], max[1], max[2] );
-	corners[1] = Vector3( max[0], max[1], max[2] );
-	corners[2] = Vector3( max[0], min[1], max[2] );
-	corners[3] = Vector3( min[0], min[1], max[2] );
-	corners[4] = Vector3( min[0], max[1], min[2] );
-	corners[5] = Vector3( max[0], max[1], min[2] );
-	corners[6] = Vector3( max[0], min[1], min[2] );
-	corners[7] = Vector3( min[0], min[1], min[2] );
+	Vector3 min_( vector3_subtracted( aabb.origin, aabb.extents ) );
+	Vector3 max_( vector3_added( aabb.origin, aabb.extents ) );
+	corners[0] = Vector3( min_[0], max_[1], max_[2] );
+	corners[1] = Vector3( max_[0], max_[1], max_[2] );
+	corners[2] = Vector3( max_[0], min_[1], max_[2] );
+	corners[3] = Vector3( min_[0], min_[1], max_[2] );
+	corners[4] = Vector3( min_[0], max_[1], min_[2] );
+	corners[5] = Vector3( max_[0], max_[1], min_[2] );
+	corners[6] = Vector3( max_[0], min_[1], min_[2] );
+	corners[7] = Vector3( min_[0], min_[1], min_[2] );
 }
 
 inline void aabb_corners_oriented( const AABB& aabb, const Matrix4& rotation, Vector3 corners[8] ){

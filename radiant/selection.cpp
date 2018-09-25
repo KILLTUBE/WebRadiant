@@ -3710,9 +3710,9 @@ void testSelect( const View& view, const Matrix4& pivot2world ){
 			start = vector4_projected( matrix4_transformed_vector4( test.getScreen2world(), Vector4( 0, 0, bestPointSelector.best().depth(), 1 ) ) );
 		}
 		else{
-			const Vector3 near = vector4_projected( matrix4_transformed_vector4( test.getScreen2world(), Vector4( 0, 0, -1, 1 ) ) );
-			const Vector3 far = vector4_projected( matrix4_transformed_vector4( test.getScreen2world(), Vector4( 0, 0, 1, 1 ) ) );
-			start = vector3_normalised( far - near ) * ( 256.f + GetGridSize() * sqrt( 3.0 ) ) + near;
+			const Vector3 near_ = vector4_projected( matrix4_transformed_vector4( test.getScreen2world(), Vector4( 0, 0, -1, 1 ) ) );
+			const Vector3 far_ = vector4_projected( matrix4_transformed_vector4( test.getScreen2world(), Vector4( 0, 0, 1, 1 ) ) );
+			start = vector3_normalised( far_ - near_ ) * ( 256.f + GetGridSize() * sqrt( 3.0 ) ) + near_;
 		}
 		vector3_snap( start, GetSnapGridSize() );
 		m_dragNewBrush.set0( start );

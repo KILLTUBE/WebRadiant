@@ -30,7 +30,9 @@
 #include "generic/static.h"
 
 #if defined( _MSC_VER ) && ( defined( _M_IX86 ) || defined( _M_AMD64 ) )
-#define DEBUGGER_BREAKPOINT() __asm { int 3 }
+#include <Windows.h>
+//#define DEBUGGER_BREAKPOINT() __asm { int 3 }
+#define DEBUGGER_BREAKPOINT() DebugBreak()
 #elif ( defined ( __i386__ ) || defined ( __x86_64__ ) ) && defined ( __GNUC__ ) && __GNUC__ >= 2
 #define DEBUGGER_BREAKPOINT() __asm__ __volatile__ ( "int $03" )
 #else
