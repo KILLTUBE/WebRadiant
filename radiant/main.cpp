@@ -568,7 +568,7 @@ int main( int argc, char* argv[] ){
 	{
 		bool aero = true;
 		for ( int i = 1; i < argc; ++i ){
-			if ( !stricmp( argv[i], "-aero" ) ){
+			if ( !_stricmp( argv[i], "-aero" ) ){
 				aero = false;
 				break;
 			}

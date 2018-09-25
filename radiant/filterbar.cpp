@@ -51,7 +51,7 @@ const char* g_caulk_shader = 0;
 
 const char* GetCaulkShader(){
 	if( !g_caulk_shader ){
-		g_caulk_shader = strdup( GetCommonShader( "caulk" ).c_str() );
+		g_caulk_shader = _strdup( GetCommonShader( "caulk" ).c_str() );
 	}
 	return g_caulk_shader;
 }

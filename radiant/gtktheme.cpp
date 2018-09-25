@@ -17,11 +17,10 @@
 #include <io.h>
 #else
 #include <sys/stat.h>
+#include <unistd.h>
+#include <sys/types.h>
 #endif
 
-#include <unistd.h>
-
-#include <sys/types.h>
 #include <string.h>
 #include <stdio.h>
 #include <gdk/gdkkeysyms.h>

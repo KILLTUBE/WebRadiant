@@ -150,7 +150,7 @@ ExtendedASCIICharacterSet(){
 			std::size_t inbytesleft = 1;
 			char* outbuf = m_converted[i];
 			std::size_t outbytesleft = 6;
-			if ( g_iconv( descriptor, &inbuf, &inbytesleft, &outbuf, &outbytesleft ) != (size_t)( -1 ) ) {
+			if ( g_iconv( descriptor, &inbuf, (gsize *)&inbytesleft, &outbuf, (gsize *)&outbytesleft ) != (size_t)( -1 ) ) {
 				UTF8Character utf8( m_converted[i] );
 				m_decodeMap[i] = utf8;
 				m_encodeMap[i] = UTF8CharacterToExtendedASCII( utf8, c );

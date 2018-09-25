@@ -991,7 +991,7 @@ void DoNewPatchDlg( EPatchPrefab prefab, int minrows, int mincols, int defrows, 
 	ModalDialog dialog;
 	GtkComboBox* width;
 	GtkComboBox* height;
-	GtkWidget* redisperseCheckBox;
+	GtkWidget* redisperseCheckBox = NULL;
 
 	GtkWindow* window = create_dialog_window( MainFrame_getWindow(), "Patch density", G_CALLBACK( dialog_delete_callback ), &dialog );
 

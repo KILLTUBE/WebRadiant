@@ -873,7 +873,7 @@ static void DoGtkTextEditor( const char* filename, guint cursorpos, int length )
 		if ( old_filename ) {
 			free( old_filename );
 		}
-		g_object_set_data( G_OBJECT( text_editor ), "filename", strdup( filename ) );
+		g_object_set_data( G_OBJECT( text_editor ), "filename", _strdup( filename ) );
 
 		// trying to show later
 		gtk_widget_show( text_editor );
