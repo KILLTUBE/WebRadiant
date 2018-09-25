@@ -99,7 +99,7 @@
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32;RADIANT_VERSION="WebRadiant";RADIANT_MAJOR_VERSION="1";RADIANT_MINOR_VERSION="9";RADIANT_ABOUTMSG="RADIANT_ABOUTMSG";RADIANT_EXECUTABLE="exe";NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Ws2_32.lib;libglib-2.0-0.lib;libgobject-2.0-0.lib;libintl-8.lib;libgtk-win32-2.0-0.lib;libgdk-win32-2.0-0.lib;libgdk_pixbuf-2.0-0.lib;libpango-1.0-0.lib;libpangoft2-1.0-0.lib;libgdkglext-win32-1.0-0.lib;libgtkglext-win32-1.0-0.lib;libxml2-2.lib;C:\DATA\GtkRadiant\x64\Debug\mathlib.lib;C:\DATA\GtkRadiant\x64\Debug\synapse.lib;C:\DATA\GtkRadiant\x64\Debug\l_net.lib;C:\DATA\GtkRadiant\x64\Debug\cmdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;Ws2_32.lib;libglib-2.0-0.lib;libgobject-2.0-0.lib;libintl-8.lib;libgtk-win32-2.0-0.lib;libgdk-win32-2.0-0.lib;libgdk_pixbuf-2.0-0.lib;libpango-1.0-0.lib;libpangoft2-1.0-0.lib;libgdkglext-win32-1.0-0.lib;libgtkglext-win32-1.0-0.lib;libxml2-2.lib;C:\DATA\GtkRadiant\x64\Debug\mathlib.lib;C:\DATA\GtkRadiant\x64\Debug\synapse.lib;C:\DATA\GtkRadiant\x64\Debug\l_net.lib;C:\DATA\GtkRadiant\x64\Debug\cmdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -131,6 +131,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\libs\gtkutil\accelerator.h" />
+    <ClInclude Include="..\libs\gtkutil\button.h" />
+    <ClInclude Include="..\libs\gtkutil\clipboard.h" />
+    <ClInclude Include="..\libs\gtkutil\closure.h" />
+    <ClInclude Include="..\libs\gtkutil\container.h" />
+    <ClInclude Include="..\libs\gtkutil\cursor.h" />
+    <ClInclude Include="..\libs\gtkutil\dialog.h" />
+    <ClInclude Include="..\libs\gtkutil\entry.h" />
+    <ClInclude Include="..\libs\gtkutil\filechooser.h" />
+    <ClInclude Include="..\libs\gtkutil\frame.h" />
+    <ClInclude Include="..\libs\gtkutil\glfont.h" />
+    <ClInclude Include="..\libs\gtkutil\glwidget.h" />
+    <ClInclude Include="..\libs\gtkutil\idledraw.h" />
+    <ClInclude Include="..\libs\gtkutil\image.h" />
+    <ClInclude Include="..\libs\gtkutil\menu.h" />
+    <ClInclude Include="..\libs\gtkutil\messagebox.h" />
+    <ClInclude Include="..\libs\gtkutil\nonmodal.h" />
+    <ClInclude Include="..\libs\gtkutil\paned.h" />
+    <ClInclude Include="..\libs\gtkutil\pointer.h" />
+    <ClInclude Include="..\libs\gtkutil\toolbar.h" />
+    <ClInclude Include="..\libs\gtkutil\widget.h" />
+    <ClInclude Include="..\libs\gtkutil\window.h" />
+    <ClInclude Include="..\libs\gtkutil\xorrectangle.h" />
     <ClInclude Include="..\radiant\autosave.h" />
     <ClInclude Include="..\radiant\brush.h" />
     <ClInclude Include="..\radiant\brushmanip.h" />
@@ -218,6 +241,29 @@
     <ClInclude Include="..\radiant\xywindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\libs\gtkutil\accelerator.cpp" />
+    <ClCompile Include="..\libs\gtkutil\button.cpp" />
+    <ClCompile Include="..\libs\gtkutil\clipboard.cpp" />
+    <ClCompile Include="..\libs\gtkutil\closure.cpp" />
+    <ClCompile Include="..\libs\gtkutil\container.cpp" />
+    <ClCompile Include="..\libs\gtkutil\cursor.cpp" />
+    <ClCompile Include="..\libs\gtkutil\dialog.cpp" />
+    <ClCompile Include="..\libs\gtkutil\entry.cpp" />
+    <ClCompile Include="..\libs\gtkutil\filechooser.cpp" />
+    <ClCompile Include="..\libs\gtkutil\frame.cpp" />
+    <ClCompile Include="..\libs\gtkutil\glfont.cpp" />
+    <ClCompile Include="..\libs\gtkutil\glwidget.cpp" />
+    <ClCompile Include="..\libs\gtkutil\idledraw.cpp" />
+    <ClCompile Include="..\libs\gtkutil\image.cpp" />
+    <ClCompile Include="..\libs\gtkutil\menu.cpp" />
+    <ClCompile Include="..\libs\gtkutil\messagebox.cpp" />
+    <ClCompile Include="..\libs\gtkutil\nonmodal.cpp" />
+    <ClCompile Include="..\libs\gtkutil\paned.cpp" />
+    <ClCompile Include="..\libs\gtkutil\pointer.cpp" />
+    <ClCompile Include="..\libs\gtkutil\toolbar.cpp" />
+    <ClCompile Include="..\libs\gtkutil\widget.cpp" />
+    <ClCompile Include="..\libs\gtkutil\window.cpp" />
+    <ClCompile Include="..\libs\gtkutil\xorrectangle.cpp" />
     <ClCompile Include="..\radiant\autosave.cpp" />
     <ClCompile Include="..\radiant\brush.cpp" />
     <ClCompile Include="..\radiant\brushmanip.cpp" />

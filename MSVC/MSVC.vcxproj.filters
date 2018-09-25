@@ -5,6 +5,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="libgtkutil">
+      <UniqueIdentifier>{340c068c-e934-428c-90bd-deb89bc8ee3a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\radiant\autosave.h" />
@@ -92,6 +95,75 @@
     <ClInclude Include="..\radiant\windowobservers.h" />
     <ClInclude Include="..\radiant\xmlstuff.h" />
     <ClInclude Include="..\radiant\xywindow.h" />
+    <ClInclude Include="..\libs\gtkutil\accelerator.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\button.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\clipboard.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\closure.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\container.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\cursor.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\dialog.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\entry.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\filechooser.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\frame.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\glfont.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\glwidget.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\idledraw.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\image.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\menu.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\messagebox.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\nonmodal.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\paned.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\pointer.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\toolbar.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\widget.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\window.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\gtkutil\xorrectangle.h">
+      <Filter>libgtkutil</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\radiant\autosave.cpp" />
@@ -178,5 +250,74 @@
     <ClCompile Include="..\radiant\windowobservers.cpp" />
     <ClCompile Include="..\radiant\xmlstuff.cpp" />
     <ClCompile Include="..\radiant\xywindow.cpp" />
+    <ClCompile Include="..\libs\gtkutil\accelerator.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\button.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\clipboard.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\closure.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\container.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\cursor.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\dialog.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\entry.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\filechooser.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\frame.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\glfont.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\glwidget.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\idledraw.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\image.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\menu.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\messagebox.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\nonmodal.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\paned.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\pointer.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\toolbar.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\widget.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\window.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\gtkutil\xorrectangle.cpp">
+      <Filter>libgtkutil</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
