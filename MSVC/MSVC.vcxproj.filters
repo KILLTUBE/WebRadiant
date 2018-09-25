@@ -8,6 +8,12 @@
     <Filter Include="libgtkutil">
       <UniqueIdentifier>{340c068c-e934-428c-90bd-deb89bc8ee3a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="debugging">
+      <UniqueIdentifier>{a2e9d68c-5185-4024-9df4-2a8f9c96ee19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{dcdefc12-a476-43b3-bae6-75ab46e4a92b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\radiant\autosave.h" />
@@ -164,6 +170,117 @@
     <ClInclude Include="..\libs\gtkutil\xorrectangle.h">
       <Filter>libgtkutil</Filter>
     </ClInclude>
+    <ClInclude Include="..\libs\debugging\debugging.h">
+      <Filter>debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\archivelib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\bytebool.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\bytestreamutils.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\character.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\cmdlib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\convert.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ddslib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\dragplanes.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\eclasslib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\entitylib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\entityxml.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\filematch.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\fs_filesystem.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\fs_path.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\imagelib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\instancelib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\maplib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\mathlib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\md5lib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\moduleobservers.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\picomodel.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\pivot.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\rect_t.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\render.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\scenelib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\selectionlib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\shaderlib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\str.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\stringio.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\texturelib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\transformlib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\traverselib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\typesystem.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\undolib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\uniquenames.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\versionlib.h">
+      <Filter>libs</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\radiant\autosave.cpp" />
@@ -318,6 +435,102 @@
     </ClCompile>
     <ClCompile Include="..\libs\gtkutil\xorrectangle.cpp">
       <Filter>libgtkutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\debugging\debugging.cpp">
+      <Filter>debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\filematch.c">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\archivelib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\bytebool.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\bytestreamutils.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\character.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\convert.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\dragplanes.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\eclasslib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\entitylib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\entityxml.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\fs_filesystem.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\fs_path.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\imagelib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\instancelib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\maplib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\moduleobservers.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\pivot.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\rect_t.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\render.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\scenelib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\selectionlib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\shaderlib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\str.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\stringio.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\texturelib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\transformlib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\traverselib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\typesystem.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\undolib.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\uniquenames.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\versionlib.cpp">
+      <Filter>libs</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

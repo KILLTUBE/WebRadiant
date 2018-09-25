@@ -131,6 +131,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\libs\archivelib.h" />
+    <ClInclude Include="..\libs\bytebool.h" />
+    <ClInclude Include="..\libs\bytestreamutils.h" />
+    <ClInclude Include="..\libs\character.h" />
+    <ClInclude Include="..\libs\cmdlib.h" />
+    <ClInclude Include="..\libs\convert.h" />
+    <ClInclude Include="..\libs\ddslib.h" />
+    <ClInclude Include="..\libs\debugging\debugging.h" />
+    <ClInclude Include="..\libs\dragplanes.h" />
+    <ClInclude Include="..\libs\eclasslib.h" />
+    <ClInclude Include="..\libs\entitylib.h" />
+    <ClInclude Include="..\libs\entityxml.h" />
+    <ClInclude Include="..\libs\filematch.h" />
+    <ClInclude Include="..\libs\fs_filesystem.h" />
+    <ClInclude Include="..\libs\fs_path.h" />
     <ClInclude Include="..\libs\gtkutil\accelerator.h" />
     <ClInclude Include="..\libs\gtkutil\button.h" />
     <ClInclude Include="..\libs\gtkutil\clipboard.h" />
@@ -154,6 +169,28 @@
     <ClInclude Include="..\libs\gtkutil\widget.h" />
     <ClInclude Include="..\libs\gtkutil\window.h" />
     <ClInclude Include="..\libs\gtkutil\xorrectangle.h" />
+    <ClInclude Include="..\libs\imagelib.h" />
+    <ClInclude Include="..\libs\instancelib.h" />
+    <ClInclude Include="..\libs\maplib.h" />
+    <ClInclude Include="..\libs\mathlib.h" />
+    <ClInclude Include="..\libs\md5lib.h" />
+    <ClInclude Include="..\libs\moduleobservers.h" />
+    <ClInclude Include="..\libs\picomodel.h" />
+    <ClInclude Include="..\libs\pivot.h" />
+    <ClInclude Include="..\libs\rect_t.h" />
+    <ClInclude Include="..\libs\render.h" />
+    <ClInclude Include="..\libs\scenelib.h" />
+    <ClInclude Include="..\libs\selectionlib.h" />
+    <ClInclude Include="..\libs\shaderlib.h" />
+    <ClInclude Include="..\libs\str.h" />
+    <ClInclude Include="..\libs\stringio.h" />
+    <ClInclude Include="..\libs\texturelib.h" />
+    <ClInclude Include="..\libs\transformlib.h" />
+    <ClInclude Include="..\libs\traverselib.h" />
+    <ClInclude Include="..\libs\typesystem.h" />
+    <ClInclude Include="..\libs\undolib.h" />
+    <ClInclude Include="..\libs\uniquenames.h" />
+    <ClInclude Include="..\libs\versionlib.h" />
     <ClInclude Include="..\radiant\autosave.h" />
     <ClInclude Include="..\radiant\brush.h" />
     <ClInclude Include="..\radiant\brushmanip.h" />
@@ -241,6 +278,21 @@
     <ClInclude Include="..\radiant\xywindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\libs\archivelib.cpp" />
+    <ClCompile Include="..\libs\bytebool.cpp" />
+    <ClCompile Include="..\libs\bytestreamutils.cpp" />
+    <ClCompile Include="..\libs\character.cpp" />
+    <ClCompile Include="..\libs\convert.cpp" />
+    <ClCompile Include="..\libs\debugging\debugging.cpp" />
+    <ClCompile Include="..\libs\dragplanes.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\libs\eclasslib.cpp" />
+    <ClCompile Include="..\libs\entitylib.cpp" />
+    <ClCompile Include="..\libs\entityxml.cpp" />
+    <ClCompile Include="..\libs\filematch.c" />
+    <ClCompile Include="..\libs\fs_filesystem.cpp" />
+    <ClCompile Include="..\libs\fs_path.cpp" />
     <ClCompile Include="..\libs\gtkutil\accelerator.cpp" />
     <ClCompile Include="..\libs\gtkutil\button.cpp" />
     <ClCompile Include="..\libs\gtkutil\clipboard.cpp" />
@@ -264,6 +316,25 @@
     <ClCompile Include="..\libs\gtkutil\widget.cpp" />
     <ClCompile Include="..\libs\gtkutil\window.cpp" />
     <ClCompile Include="..\libs\gtkutil\xorrectangle.cpp" />
+    <ClCompile Include="..\libs\imagelib.cpp" />
+    <ClCompile Include="..\libs\instancelib.cpp" />
+    <ClCompile Include="..\libs\maplib.cpp" />
+    <ClCompile Include="..\libs\moduleobservers.cpp" />
+    <ClCompile Include="..\libs\pivot.cpp" />
+    <ClCompile Include="..\libs\rect_t.cpp" />
+    <ClCompile Include="..\libs\render.cpp" />
+    <ClCompile Include="..\libs\scenelib.cpp" />
+    <ClCompile Include="..\libs\selectionlib.cpp" />
+    <ClCompile Include="..\libs\shaderlib.cpp" />
+    <ClCompile Include="..\libs\str.cpp" />
+    <ClCompile Include="..\libs\stringio.cpp" />
+    <ClCompile Include="..\libs\texturelib.cpp" />
+    <ClCompile Include="..\libs\transformlib.cpp" />
+    <ClCompile Include="..\libs\traverselib.cpp" />
+    <ClCompile Include="..\libs\typesystem.cpp" />
+    <ClCompile Include="..\libs\undolib.cpp" />
+    <ClCompile Include="..\libs\uniquenames.cpp" />
+    <ClCompile Include="..\libs\versionlib.cpp" />
     <ClCompile Include="..\radiant\autosave.cpp" />
     <ClCompile Include="..\radiant\brush.cpp" />
     <ClCompile Include="..\radiant\brushmanip.cpp" />

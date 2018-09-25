@@ -173,13 +173,13 @@ void MakeEmpty(){
 
 void MakeLower(){
 	if ( m_pStr ) {
-		strlwr( m_pStr );
+		_strlwr( m_pStr );
 	}
 }
 
 void MakeUpper(){
 	if ( m_pStr ) {
-		strupr( m_pStr );
+		_strupr( m_pStr );
 	}
 }
 
@@ -238,7 +238,7 @@ int Compare( const char* str ) const {
 }
 
 int CompareNoCase( const char* str ) const {
-	return strcasecmp( m_pStr, str );
+	return _strcmpi( m_pStr, str );
 }
 
 std::size_t GetLength(){
@@ -415,18 +415,18 @@ Str& operator +=( const char *pStr ){
 }
 
 
-bool operator ==( const Str& rhs ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, rhs.m_pStr ) == 0 : strcmp( m_pStr, rhs.m_pStr ) == 0; }
-bool operator ==( char* pStr ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, pStr ) == 0 : strcmp( m_pStr, pStr ) == 0; }
-bool operator ==( const char* pStr ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, pStr ) == 0 : strcmp( m_pStr, pStr ) == 0; }
-bool operator !=( Str& rhs ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, rhs.m_pStr ) != 0 : strcmp( m_pStr, rhs.m_pStr ) != 0; }
-bool operator !=( char* pStr ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, pStr ) != 0 : strcmp( m_pStr, pStr ) != 0; }
-bool operator !=( const char* pStr ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, pStr ) != 0 : strcmp( m_pStr, pStr ) != 0; }
-bool operator <( const Str& rhs ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, rhs.m_pStr ) < 0 : strcmp( m_pStr, rhs.m_pStr ) < 0; }
-bool operator <( char* pStr ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, pStr ) < 0 : strcmp( m_pStr, pStr ) < 0; }
-bool operator <( const char* pStr ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, pStr ) < 0 : strcmp( m_pStr, pStr ) < 0; }
-bool operator >( const Str& rhs ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, rhs.m_pStr ) > 0 : strcmp( m_pStr, rhs.m_pStr ) > 0; }
-bool operator >( char* pStr ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, pStr ) > 0 : strcmp( m_pStr, pStr ) > 0; }
-bool operator >( const char* pStr ) const { return ( m_bIgnoreCase ) ? stricmp( m_pStr, pStr ) > 0 : strcmp( m_pStr, pStr ) > 0; }
+bool operator ==( const Str& rhs ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, rhs.m_pStr ) == 0 : strcmp( m_pStr, rhs.m_pStr ) == 0; }
+bool operator ==( char* pStr ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, pStr ) == 0 : strcmp( m_pStr, pStr ) == 0; }
+bool operator ==( const char* pStr ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, pStr ) == 0 : strcmp( m_pStr, pStr ) == 0; }
+bool operator !=( Str& rhs ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, rhs.m_pStr ) != 0 : strcmp( m_pStr, rhs.m_pStr ) != 0; }
+bool operator !=( char* pStr ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, pStr ) != 0 : strcmp( m_pStr, pStr ) != 0; }
+bool operator !=( const char* pStr ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, pStr ) != 0 : strcmp( m_pStr, pStr ) != 0; }
+bool operator <( const Str& rhs ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, rhs.m_pStr ) < 0 : strcmp( m_pStr, rhs.m_pStr ) < 0; }
+bool operator <( char* pStr ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, pStr ) < 0 : strcmp( m_pStr, pStr ) < 0; }
+bool operator <( const char* pStr ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, pStr ) < 0 : strcmp( m_pStr, pStr ) < 0; }
+bool operator >( const Str& rhs ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, rhs.m_pStr ) > 0 : strcmp( m_pStr, rhs.m_pStr ) > 0; }
+bool operator >( char* pStr ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, pStr ) > 0 : strcmp( m_pStr, pStr ) > 0; }
+bool operator >( const char* pStr ) const { return ( m_bIgnoreCase ) ? _stricmp( m_pStr, pStr ) > 0 : strcmp( m_pStr, pStr ) > 0; }
 char& operator []( std::size_t nIndex ) { return m_pStr[nIndex]; }
 const char& operator []( std::size_t nIndex ) const { return m_pStr[nIndex]; }
 char GetAt( std::size_t nIndex ) { return m_pStr[nIndex]; }
