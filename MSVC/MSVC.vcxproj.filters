@@ -14,6 +14,9 @@
     <Filter Include="libs">
       <UniqueIdentifier>{dcdefc12-a476-43b3-bae6-75ab46e4a92b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="gtkutil">
+      <UniqueIdentifier>{601dac04-9b89-4e70-9474-7a6ee2760296}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\radiant\autosave.h" />

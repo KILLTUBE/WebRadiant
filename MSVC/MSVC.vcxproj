@@ -335,90 +335,258 @@
     <ClCompile Include="..\libs\undolib.cpp" />
     <ClCompile Include="..\libs\uniquenames.cpp" />
     <ClCompile Include="..\libs\versionlib.cpp" />
-    <ClCompile Include="..\radiant\autosave.cpp" />
-    <ClCompile Include="..\radiant\brush.cpp" />
-    <ClCompile Include="..\radiant\brushmanip.cpp" />
-    <ClCompile Include="..\radiant\brushmodule.cpp" />
-    <ClCompile Include="..\radiant\brushnode.cpp" />
-    <ClCompile Include="..\radiant\brushtokens.cpp" />
-    <ClCompile Include="..\radiant\brushxml.cpp" />
-    <ClCompile Include="..\radiant\brush_primit.cpp" />
-    <ClCompile Include="..\radiant\build.cpp" />
-    <ClCompile Include="..\radiant\camwindow.cpp" />
-    <ClCompile Include="..\radiant\clippertool.cpp" />
-    <ClCompile Include="..\radiant\commands.cpp" />
-    <ClCompile Include="..\radiant\console.cpp" />
-    <ClCompile Include="..\radiant\csg.cpp" />
-    <ClCompile Include="..\radiant\dialog.cpp" />
-    <ClCompile Include="..\radiant\eclass.cpp" />
-    <ClCompile Include="..\radiant\eclass_def.cpp" />
-    <ClCompile Include="..\radiant\eclass_doom3.cpp" />
-    <ClCompile Include="..\radiant\eclass_fgd.cpp" />
-    <ClCompile Include="..\radiant\eclass_xml.cpp" />
-    <ClCompile Include="..\radiant\entity.cpp" />
-    <ClCompile Include="..\radiant\entityinspector.cpp" />
-    <ClCompile Include="..\radiant\entitylist.cpp" />
-    <ClCompile Include="..\radiant\environment.cpp" />
-    <ClCompile Include="..\radiant\error.cpp" />
-    <ClCompile Include="..\radiant\feedback.cpp" />
-    <ClCompile Include="..\radiant\filetypes.cpp" />
-    <ClCompile Include="..\radiant\filterbar.cpp" />
-    <ClCompile Include="..\radiant\filters.cpp" />
-    <ClCompile Include="..\radiant\findtexturedialog.cpp" />
-    <ClCompile Include="..\radiant\glwidget.cpp" />
-    <ClCompile Include="..\radiant\grid.cpp" />
-    <ClCompile Include="..\radiant\groupdialog.cpp" />
-    <ClCompile Include="..\radiant\gtkdlgs.cpp" />
-    <ClCompile Include="..\radiant\gtkmisc.cpp" />
-    <ClCompile Include="..\radiant\gtktheme.cpp" />
-    <ClCompile Include="..\radiant\help.cpp" />
-    <ClCompile Include="..\radiant\image.cpp" />
-    <ClCompile Include="..\radiant\main.cpp" />
-    <ClCompile Include="..\radiant\mainframe.cpp" />
-    <ClCompile Include="..\radiant\map.cpp" />
-    <ClCompile Include="..\radiant\mru.cpp" />
-    <ClCompile Include="..\radiant\multimon.cpp" />
-    <ClCompile Include="..\radiant\nullmodel.cpp" />
-    <ClCompile Include="..\radiant\parse.cpp" />
-    <ClCompile Include="..\radiant\patch.cpp" />
-    <ClCompile Include="..\radiant\patchdialog.cpp" />
-    <ClCompile Include="..\radiant\patchmanip.cpp" />
-    <ClCompile Include="..\radiant\patchmodule.cpp" />
-    <ClCompile Include="..\radiant\plugin.cpp" />
-    <ClCompile Include="..\radiant\pluginapi.cpp" />
-    <ClCompile Include="..\radiant\pluginmanager.cpp" />
-    <ClCompile Include="..\radiant\pluginmenu.cpp" />
-    <ClCompile Include="..\radiant\plugintoolbar.cpp" />
-    <ClCompile Include="..\radiant\points.cpp" />
-    <ClCompile Include="..\radiant\preferencedictionary.cpp" />
-    <ClCompile Include="..\radiant\preferences.cpp" />
-    <ClCompile Include="..\radiant\qe3.cpp" />
-    <ClCompile Include="..\radiant\qgl.cpp" />
-    <ClCompile Include="..\radiant\referencecache.cpp" />
-    <ClCompile Include="..\radiant\renderer.cpp" />
-    <ClCompile Include="..\radiant\renderstate.cpp" />
-    <ClCompile Include="..\radiant\scenegraph.cpp" />
-    <ClCompile Include="..\radiant\select.cpp" />
-    <ClCompile Include="..\radiant\selection.cpp" />
-    <ClCompile Include="..\radiant\server.cpp" />
-    <ClCompile Include="..\radiant\shaders.cpp" />
-    <ClCompile Include="..\radiant\sockets.cpp" />
-    <ClCompile Include="..\radiant\stacktrace.cpp" />
-    <ClCompile Include="..\radiant\surfacedialog.cpp" />
-    <ClCompile Include="..\radiant\texmanip.cpp" />
-    <ClCompile Include="..\radiant\textureentry.cpp" />
-    <ClCompile Include="..\radiant\textures.cpp" />
-    <ClCompile Include="..\radiant\texwindow.cpp" />
-    <ClCompile Include="..\radiant\timer.cpp" />
-    <ClCompile Include="..\radiant\treemodel.cpp" />
-    <ClCompile Include="..\radiant\undo.cpp" />
-    <ClCompile Include="..\radiant\url.cpp" />
-    <ClCompile Include="..\radiant\view.cpp" />
-    <ClCompile Include="..\radiant\watchbsp.cpp" />
-    <ClCompile Include="..\radiant\winding.cpp" />
-    <ClCompile Include="..\radiant\windowobservers.cpp" />
-    <ClCompile Include="..\radiant\xmlstuff.cpp" />
-    <ClCompile Include="..\radiant\xywindow.cpp" />
+    <ClCompile Include="..\radiant\autosave.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\brush.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\brushmanip.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\brushmodule.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\brushnode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\brushtokens.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\brushxml.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\brush_primit.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\build.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\camwindow.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\clippertool.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\commands.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\console.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\csg.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\dialog.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\eclass.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\eclass_def.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\eclass_doom3.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\eclass_fgd.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\eclass_xml.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\entity.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\entityinspector.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\entitylist.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\environment.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\error.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\feedback.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\filetypes.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\filterbar.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\filters.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\findtexturedialog.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\glwidget.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\grid.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\groupdialog.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\gtkdlgs.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\gtkmisc.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\gtktheme.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\help.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\image.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\main.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\mainframe.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\map.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\mru.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\multimon.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\nullmodel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\parse.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\patch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\patchdialog.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\patchmanip.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\patchmodule.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\plugin.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\pluginapi.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\pluginmanager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\pluginmenu.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\plugintoolbar.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\points.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\preferencedictionary.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\preferences.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\qe3.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\qgl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\referencecache.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\renderer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\renderstate.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\scenegraph.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\select.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\selection.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\server.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\shaders.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\sockets.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\stacktrace.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\surfacedialog.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\texmanip.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\textureentry.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\textures.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\texwindow.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\timer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\treemodel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\undo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\url.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\view.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\watchbsp.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\winding.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\windowobservers.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\xmlstuff.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\radiant\xywindow.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
