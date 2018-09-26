@@ -26,6 +26,9 @@
     <Filter Include="xml">
       <UniqueIdentifier>{f7632d94-3864-4beb-a80b-a25cb2782bc8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="lnet">
+      <UniqueIdentifier>{c6deec17-96ae-4868-9cd5-3f48d808e810}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\radiant\autosave.h" />
@@ -314,6 +317,12 @@
     <ClInclude Include="..\libs\xml\xmlwriter.h">
       <Filter>xml</Filter>
     </ClInclude>
+    <ClInclude Include="..\libs\l_net\l_net.h">
+      <Filter>lnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\l_net\l_net_wins.h">
+      <Filter>lnet</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\radiant\autosave.cpp" />
@@ -588,6 +597,15 @@
     </ClCompile>
     <ClCompile Include="..\libs\xml\xmltextags.cpp">
       <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\l_net\l_net.c">
+      <Filter>lnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\l_net\l_net_berkley.c">
+      <Filter>lnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\l_net\l_net_wins.c">
+      <Filter>lnet</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

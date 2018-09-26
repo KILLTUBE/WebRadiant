@@ -75,7 +75,7 @@
     <LibraryPath>C:\msys64\home\kung\defs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LibraryPath>C:\msys64\home\kung\defs;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\msys64\defs;$(LibraryPath)</LibraryPath>
     <IncludePath>$(SolutionDir)..\libs;$(SolutionDir)..\include;C:\msys64\mingw64\include\gtk-2.0;C:\msys64\mingw64\include\glib-2.0;C:\msys64\mingw64\include\gdk-pixbuf-2.0;C:\msys64\mingw64\include\cairo;C:\msys64\mingw64\include\pango-1.0;C:\msys64\mingw64\lib\gtk-2.0\include;C:\msys64\mingw64\include\atk-1.0;C:\msys64\mingw64\include;C:\msys64\mingw64\include\freetype2;C:\msys64\mingw64\include\gtkglext-1.0;C:\msys64\mingw64\lib\gtkglext-1.0\include;C:\msys64\mingw64\lib\glib-2.0\include;C:\msys64\mingw64\include\libxml2;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\install\</OutDir>
     <TargetName>WebRadiant64</TargetName>
@@ -101,7 +101,7 @@
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32;RADIANT_VERSION="WebRadiant";RADIANT_MAJOR_VERSION="1";RADIANT_MINOR_VERSION="9";RADIANT_ABOUTMSG="RADIANT_ABOUTMSG";RADIANT_EXECUTABLE="exe";NOMINMAX;MAKE_MSVC_WORK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>dbghelp.lib;opengl32.lib;Ws2_32.lib;libglib-2.0-0.lib;libgobject-2.0-0.lib;libintl-8.lib;libgtk-win32-2.0-0.lib;libgdk-win32-2.0-0.lib;libgdk_pixbuf-2.0-0.lib;libpango-1.0-0.lib;libpangoft2-1.0-0.lib;libgdkglext-win32-1.0-0.lib;libgtkglext-win32-1.0-0.lib;libxml2-2.lib;C:\DATA\GtkRadiant\x64\Debug\mathlib.lib;C:\DATA\GtkRadiant\x64\Debug\synapse.lib;C:\DATA\GtkRadiant\x64\Debug\l_net.lib;C:\DATA\GtkRadiant\x64\Debug\cmdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>dbghelp.lib;opengl32.lib;Ws2_32.lib;libglib-2.0-0.lib;libgobject-2.0-0.lib;libintl-8.lib;libgtk-win32-2.0-0.lib;libgdk-win32-2.0-0.lib;libgdk_pixbuf-2.0-0.lib;libpango-1.0-0.lib;libpangoft2-1.0-0.lib;libgdkglext-win32-1.0-0.lib;libgtkglext-win32-1.0-0.lib;libxml2-2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -173,6 +173,8 @@
     <ClInclude Include="..\libs\gtkutil\xorrectangle.h" />
     <ClInclude Include="..\libs\imagelib.h" />
     <ClInclude Include="..\libs\instancelib.h" />
+    <ClInclude Include="..\libs\l_net\l_net.h" />
+    <ClInclude Include="..\libs\l_net\l_net_wins.h" />
     <ClInclude Include="..\libs\maplib.h" />
     <ClInclude Include="..\libs\mathlib.h" />
     <ClInclude Include="..\libs\md5lib.h" />
@@ -328,6 +330,11 @@
     <ClCompile Include="..\libs\gtkutil\xorrectangle.cpp" />
     <ClCompile Include="..\libs\imagelib.cpp" />
     <ClCompile Include="..\libs\instancelib.cpp" />
+    <ClCompile Include="..\libs\l_net\l_net.c" />
+    <ClCompile Include="..\libs\l_net\l_net_berkley.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\libs\l_net\l_net_wins.c" />
     <ClCompile Include="..\libs\maplib.cpp" />
     <ClCompile Include="..\libs\moduleobservers.cpp" />
     <ClCompile Include="..\libs\pivot.cpp" />
