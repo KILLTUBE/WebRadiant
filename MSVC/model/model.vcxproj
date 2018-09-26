@@ -19,10 +19,36 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\libs\picomodel\lwo\lwo2.h" />
+    <ClInclude Include="..\..\libs\picomodel\picointernal.h" />
+    <ClInclude Include="..\..\libs\picomodel\pm_fm.h" />
     <ClInclude Include="..\..\plugins\model\model.h" />
     <ClInclude Include="..\..\plugins\model\plugin.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\libs\picomodel\lwo\clip.c" />
+    <ClCompile Include="..\..\libs\picomodel\lwo\envelope.c" />
+    <ClCompile Include="..\..\libs\picomodel\lwo\list.c" />
+    <ClCompile Include="..\..\libs\picomodel\lwo\lwio.c" />
+    <ClCompile Include="..\..\libs\picomodel\lwo\lwo2.c" />
+    <ClCompile Include="..\..\libs\picomodel\lwo\lwob.c" />
+    <ClCompile Include="..\..\libs\picomodel\lwo\pntspols.c" />
+    <ClCompile Include="..\..\libs\picomodel\lwo\surface.c" />
+    <ClCompile Include="..\..\libs\picomodel\lwo\vecmath.c" />
+    <ClCompile Include="..\..\libs\picomodel\lwo\vmap.c" />
+    <ClCompile Include="..\..\libs\picomodel\picointernal.c" />
+    <ClCompile Include="..\..\libs\picomodel\picomodel.c" />
+    <ClCompile Include="..\..\libs\picomodel\picomodules.c" />
+    <ClCompile Include="..\..\libs\picomodel\pm_3ds.c" />
+    <ClCompile Include="..\..\libs\picomodel\pm_ase.c" />
+    <ClCompile Include="..\..\libs\picomodel\pm_fm.c" />
+    <ClCompile Include="..\..\libs\picomodel\pm_lwo.c" />
+    <ClCompile Include="..\..\libs\picomodel\pm_md2.c" />
+    <ClCompile Include="..\..\libs\picomodel\pm_md3.c" />
+    <ClCompile Include="..\..\libs\picomodel\pm_mdc.c" />
+    <ClCompile Include="..\..\libs\picomodel\pm_ms3d.c" />
+    <ClCompile Include="..\..\libs\picomodel\pm_obj.c" />
+    <ClCompile Include="..\..\libs\picomodel\pm_terrain.c" />
     <ClCompile Include="..\..\plugins\model\model.cpp" />
     <ClCompile Include="..\..\plugins\model\plugin.cpp" />
   </ItemGroup>

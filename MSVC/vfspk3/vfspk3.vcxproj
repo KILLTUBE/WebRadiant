@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\libs\filematch.h" />
     <ClInclude Include="..\..\plugins\vfspk3\archive.h" />
     <ClInclude Include="..\..\plugins\vfspk3\vfs.h" />
     <ClInclude Include="..\..\plugins\vfspk3\vfspk3.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\libs\filematch.c" />
     <ClCompile Include="..\..\plugins\vfspk3\archive.cpp" />
     <ClCompile Include="..\..\plugins\vfspk3\vfs.cpp" />
     <ClCompile Include="..\..\plugins\vfspk3\vfspk3.cpp" />

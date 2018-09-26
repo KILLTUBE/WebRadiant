@@ -83,7 +83,7 @@
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32;RADIANT_VERSION="WebRadiant";RADIANT_MAJOR_VERSION="1";RADIANT_MINOR_VERSION="9";RADIANT_ABOUTMSG="RADIANT_ABOUTMSG";RADIANT_EXECUTABLE="exe";NOMINMAX;MAKE_MSVC_WORK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>dbghelp.lib;opengl32.lib;Ws2_32.lib;libglib-2.0-0.lib;libgobject-2.0-0.lib;libintl-8.lib;libgtk-win32-2.0-0.lib;libgdk-win32-2.0-0.lib;libgdk_pixbuf-2.0-0.lib;libpango-1.0-0.lib;libpangoft2-1.0-0.lib;libgdkglext-win32-1.0-0.lib;libgtkglext-win32-1.0-0.lib;libxml2-2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>dbghelp.lib;opengl32.lib;Ws2_32.lib;libglib-2.0-0.lib;libgobject-2.0-0.lib;libintl-8.lib;libgtk-win32-2.0-0.lib;libgdk-win32-2.0-0.lib;libgdk_pixbuf-2.0-0.lib;libpango-1.0-0.lib;libpangoft2-1.0-0.lib;libgdkglext-win32-1.0-0.lib;libgtkglext-win32-1.0-0.lib;libxml2-2.lib;libpng16-16.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="pico">
+      <UniqueIdentifier>{f9baf78b-e7b3-4660-b0b2-6cb162cf6375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pico\lwo">
+      <UniqueIdentifier>{e9cb3f12-17ca-45d7-bb9c-7d002ad1d425}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\plugins\model\model.h">
@@ -21,6 +27,15 @@
     <ClInclude Include="..\..\plugins\model\plugin.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\libs\picomodel\picointernal.h">
+      <Filter>pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\picomodel\pm_fm.h">
+      <Filter>pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\picomodel\lwo\lwo2.h">
+      <Filter>pico\lwo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\plugins\model\model.cpp">
@@ -28,6 +43,75 @@
     </ClCompile>
     <ClCompile Include="..\..\plugins\model\plugin.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\picointernal.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\picomodel.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\picomodules.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\pm_3ds.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\pm_ase.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\pm_fm.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\pm_lwo.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\pm_md2.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\pm_md3.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\pm_mdc.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\pm_ms3d.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\pm_obj.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\pm_terrain.c">
+      <Filter>pico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\lwo\clip.c">
+      <Filter>pico\lwo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\lwo\envelope.c">
+      <Filter>pico\lwo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\lwo\list.c">
+      <Filter>pico\lwo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\lwo\lwio.c">
+      <Filter>pico\lwo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\lwo\lwo2.c">
+      <Filter>pico\lwo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\lwo\lwob.c">
+      <Filter>pico\lwo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\lwo\pntspols.c">
+      <Filter>pico\lwo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\lwo\surface.c">
+      <Filter>pico\lwo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\lwo\vecmath.c">
+      <Filter>pico\lwo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\picomodel\lwo\vmap.c">
+      <Filter>pico\lwo</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

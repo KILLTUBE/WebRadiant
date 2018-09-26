@@ -217,7 +217,7 @@ static int _ase_canload( PM_PARAMS_CANLOAD ){
 	}
 
 	/* check first token */
-	if ( _pico_stricmp( p->token, "*3dsmax_asciiexport" ) ) {
+	if ( _stricmp( p->token, "*3dsmax_asciiexport" ) ) {
 		_pico_free_parser( p );
 		return PICO_PMV_ERROR_IDENT;
 	}

@@ -542,7 +542,7 @@ const char *_pico_stristr( const char *str, const char *substr ){
 	const size_t sublen = strlen( substr );
 	while ( *str )
 	{
-		if ( !_pico_strnicmp( str,substr,sublen ) ) {
+		if ( !_strnicmp( str,substr,sublen ) ) {
 			break;
 		}
 		str++;
@@ -972,7 +972,7 @@ int _pico_parse_checki( picoParser_t *p, int allowLFs, char *str ){
 	if ( !_pico_parse_ex( p,allowLFs,1 ) ) {
 		return 0;
 	}
-	if ( !_pico_stricmp( p->token,str ) ) {
+	if ( !_stricmp( p->token,str ) ) {
 		return 1;
 	}
 	return 0;

@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{db31df9a-a224-4fab-973e-8b3494b18f99}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\plugins\vfspk3\archive.h">
@@ -24,6 +27,9 @@
     <ClInclude Include="..\..\plugins\vfspk3\vfspk3.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\libs\filematch.h">
+      <Filter>libs</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\plugins\vfspk3\archive.cpp">
@@ -34,6 +40,9 @@
     </ClCompile>
     <ClCompile Include="..\..\plugins\vfspk3\vfspk3.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\filematch.c">
+      <Filter>libs</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

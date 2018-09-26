@@ -34,21 +34,19 @@
 // Leonardo Zide (leo@lokigames.com)
 //
 
-#include "jpeg.h"
 
 #include <setjmp.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+#include "ifilesystem.h"
+#include "imagelib.h"
+#include "jpeg.h"
 extern "C" {
 #include <jpeglib.h>
 #include <jerror.h>
 }
 
-#include "ifilesystem.h"
-
-#include "imagelib.h"
 
 typedef unsigned char byte;
 

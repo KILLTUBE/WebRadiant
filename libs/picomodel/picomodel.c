@@ -514,7 +514,7 @@ picoShader_t *PicoFindShader( picoModel_t *model, char *name, int caseSensitive 
 				return model->shader[ i ];
 			}
 		}
-		else if ( !_pico_stricmp( name, model->shader[ i ]->name ) ) {
+		else if ( !_stricmp( name, model->shader[ i ]->name ) ) {
 			return model->shader[ i ];
 		}
 	}
@@ -754,7 +754,7 @@ picoSurface_t *PicoFindSurface(
 			}
 		}
 		else {
-			if ( !_pico_stricmp( name,model->surface[ i ]->name ) ) {
+			if ( !_stricmp( name,model->surface[ i ]->name ) ) {
 				return model->surface[ i ];
 			}
 		}
@@ -2027,14 +2027,14 @@ int PicoRemapModel( picoModel_t *model, char *remapFile ){
 		}
 
 		/* skip over c++ style comment lines */
-		if ( !_pico_stricmp( p->token,"//" ) ) {
+		if ( !_stricmp( p->token,"//" ) ) {
 			_pico_parse_skip_rest( p );
 			continue;
 		}
 
 		/* block for quick material shader name remapping */
 		/* materials { "m" (=>|->|=) "s" } */
-		if ( !_pico_stricmp( p->token, "materials" ) ) {
+		if ( !_stricmp( p->token, "materials" ) ) {
 			int level = 1;
 
 			/* check bracket */
@@ -2103,7 +2103,7 @@ int PicoRemapModel( picoModel_t *model, char *remapFile ){
 		}
 		/* block for detailed single material remappings */
 		/* materials[ "m" ] { key data... } */
-		else if ( !_pico_stricmp( p->token,"materials[" ) ) {
+		else if ( !_stricmp( p->token,"materials[" ) ) {
 			picoShader_t *shader;
 			char *tempMaterialName;
 			int level = 1;
@@ -2165,21 +2165,21 @@ int PicoRemapModel( picoModel_t *model, char *remapFile ){
 				}
 
 				/* remap shader name */
-				if ( !_pico_stricmp( p->token,"shader" ) ) {
+				if ( !_stricmp( p->token,"shader" ) ) {
 					if ( !_pico_parse( p,0 ) ) {
 						_prm_error_return;
 					}
 					PicoSetShaderName( shader,p->token );
 				}
 				/* remap shader map name */
-				else if ( !_pico_stricmp( p->token,"mapname" ) ) {
+				else if ( !_stricmp( p->token,"mapname" ) ) {
 					if ( !_pico_parse( p,0 ) ) {
 						_prm_error_return;
 					}
 					PicoSetShaderMapName( shader,p->token );
 				}
 				/* remap shader's ambient color */
-				else if ( !_pico_stricmp( p->token,"ambient" ) ) {
+				else if ( !_stricmp( p->token,"ambient" ) ) {
 					picoColor_t color;
 					picoVec3_t v;
 
@@ -2197,7 +2197,7 @@ int PicoRemapModel( picoModel_t *model, char *remapFile ){
 					PicoSetShaderAmbientColor( shader,color );
 				}
 				/* remap shader's diffuse color */
-				else if ( !_pico_stricmp( p->token,"diffuse" ) ) {
+				else if ( !_stricmp( p->token,"diffuse" ) ) {
 					picoColor_t color;
 					picoVec3_t v;
 
