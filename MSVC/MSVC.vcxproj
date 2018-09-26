@@ -193,6 +193,11 @@
     <ClInclude Include="..\libs\undolib.h" />
     <ClInclude Include="..\libs\uniquenames.h" />
     <ClInclude Include="..\libs\versionlib.h" />
+    <ClInclude Include="..\libs\xml\ixml.h" />
+    <ClInclude Include="..\libs\xml\xmlelement.h" />
+    <ClInclude Include="..\libs\xml\xmlparser.h" />
+    <ClInclude Include="..\libs\xml\xmltextags.h" />
+    <ClInclude Include="..\libs\xml\xmlwriter.h" />
     <ClInclude Include="..\radiant\autosave.h" />
     <ClInclude Include="..\radiant\brush.h" />
     <ClInclude Include="..\radiant\brushmanip.h" />
@@ -340,6 +345,11 @@
     <ClCompile Include="..\libs\undolib.cpp" />
     <ClCompile Include="..\libs\uniquenames.cpp" />
     <ClCompile Include="..\libs\versionlib.cpp" />
+    <ClCompile Include="..\libs\xml\ixml.cpp" />
+    <ClCompile Include="..\libs\xml\xmlelement.cpp" />
+    <ClCompile Include="..\libs\xml\xmlparser.cpp" />
+    <ClCompile Include="..\libs\xml\xmltextags.cpp" />
+    <ClCompile Include="..\libs\xml\xmlwriter.cpp" />
     <ClCompile Include="..\radiant\autosave.cpp">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)radiant\</ObjectFileName>
     </ClCompile>
