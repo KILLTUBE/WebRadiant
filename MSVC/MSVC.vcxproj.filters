@@ -17,6 +17,12 @@
     <Filter Include="gtkutil">
       <UniqueIdentifier>{601dac04-9b89-4e70-9474-7a6ee2760296}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cmdlib">
+      <UniqueIdentifier>{b3f11e83-5877-451b-95c0-285b113eb10f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profile">
+      <UniqueIdentifier>{f8c60ef9-f71a-4a4c-9db6-8ef8d2035b0a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\radiant\autosave.h" />
@@ -284,6 +290,12 @@
     <ClInclude Include="..\libs\versionlib.h">
       <Filter>libs</Filter>
     </ClInclude>
+    <ClInclude Include="..\libs\profile\file.h">
+      <Filter>profile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\profile\profile.h">
+      <Filter>profile</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\radiant\autosave.cpp" />
@@ -534,6 +546,15 @@
     </ClCompile>
     <ClCompile Include="..\libs\versionlib.cpp">
       <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\cmdlib\cmdlib.cpp">
+      <Filter>cmdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\profile\file.cpp">
+      <Filter>profile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\profile\profile.cpp">
+      <Filter>profile</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

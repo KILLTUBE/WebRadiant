@@ -99,7 +99,7 @@
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32;RADIANT_VERSION="WebRadiant";RADIANT_MAJOR_VERSION="1";RADIANT_MINOR_VERSION="9";RADIANT_ABOUTMSG="RADIANT_ABOUTMSG";RADIANT_EXECUTABLE="exe";NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>opengl32.lib;Ws2_32.lib;libglib-2.0-0.lib;libgobject-2.0-0.lib;libintl-8.lib;libgtk-win32-2.0-0.lib;libgdk-win32-2.0-0.lib;libgdk_pixbuf-2.0-0.lib;libpango-1.0-0.lib;libpangoft2-1.0-0.lib;libgdkglext-win32-1.0-0.lib;libgtkglext-win32-1.0-0.lib;libxml2-2.lib;C:\DATA\GtkRadiant\x64\Debug\mathlib.lib;C:\DATA\GtkRadiant\x64\Debug\synapse.lib;C:\DATA\GtkRadiant\x64\Debug\l_net.lib;C:\DATA\GtkRadiant\x64\Debug\cmdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>dbghelp.lib;opengl32.lib;Ws2_32.lib;libglib-2.0-0.lib;libgobject-2.0-0.lib;libintl-8.lib;libgtk-win32-2.0-0.lib;libgdk-win32-2.0-0.lib;libgdk_pixbuf-2.0-0.lib;libpango-1.0-0.lib;libpangoft2-1.0-0.lib;libgdkglext-win32-1.0-0.lib;libgtkglext-win32-1.0-0.lib;libxml2-2.lib;C:\DATA\GtkRadiant\x64\Debug\mathlib.lib;C:\DATA\GtkRadiant\x64\Debug\synapse.lib;C:\DATA\GtkRadiant\x64\Debug\l_net.lib;C:\DATA\GtkRadiant\x64\Debug\cmdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -177,6 +177,8 @@
     <ClInclude Include="..\libs\moduleobservers.h" />
     <ClInclude Include="..\libs\picomodel.h" />
     <ClInclude Include="..\libs\pivot.h" />
+    <ClInclude Include="..\libs\profile\file.h" />
+    <ClInclude Include="..\libs\profile\profile.h" />
     <ClInclude Include="..\libs\rect_t.h" />
     <ClInclude Include="..\libs\render.h" />
     <ClInclude Include="..\libs\scenelib.h" />
@@ -282,6 +284,7 @@
     <ClCompile Include="..\libs\bytebool.cpp" />
     <ClCompile Include="..\libs\bytestreamutils.cpp" />
     <ClCompile Include="..\libs\character.cpp" />
+    <ClCompile Include="..\libs\cmdlib\cmdlib.cpp" />
     <ClCompile Include="..\libs\convert.cpp" />
     <ClCompile Include="..\libs\debugging\debugging.cpp" />
     <ClCompile Include="..\libs\dragplanes.cpp">
@@ -321,6 +324,8 @@
     <ClCompile Include="..\libs\maplib.cpp" />
     <ClCompile Include="..\libs\moduleobservers.cpp" />
     <ClCompile Include="..\libs\pivot.cpp" />
+    <ClCompile Include="..\libs\profile\file.cpp" />
+    <ClCompile Include="..\libs\profile\profile.cpp" />
     <ClCompile Include="..\libs\rect_t.cpp" />
     <ClCompile Include="..\libs\render.cpp" />
     <ClCompile Include="..\libs\scenelib.cpp" />

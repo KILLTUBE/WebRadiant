@@ -25,6 +25,7 @@
 #include <cstddef>
 #include <algorithm>
 
+#include "../debugging/debugging.h"
 #include "memory/allocator.h"
 
 /// \brief An array whose size is variable at run-time.
