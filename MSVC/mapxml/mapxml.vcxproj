@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32;RADIANT_VERSION="WebRadiant";RADIANT_MAJOR_VERSION="1";RADIANT_MINOR_VERSION="9";RADIANT_ABOUTMSG="RADIANT_ABOUTMSG";RADIANT_EXECUTABLE="exe";NOMINMAX;MAKE_MSVC_WORK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -115,6 +116,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\plugins\mapxml\plugin.h" />
+    <ClInclude Include="..\..\plugins\mapxml\xmlparse.h" />
+    <ClInclude Include="..\..\plugins\mapxml\xmlwrite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\plugins\mapxml\plugin.cpp" />
+    <ClCompile Include="..\..\plugins\mapxml\xmlparse.cpp" />
+    <ClCompile Include="..\..\plugins\mapxml\xmlwrite.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

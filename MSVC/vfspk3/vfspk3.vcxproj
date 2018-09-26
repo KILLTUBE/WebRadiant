@@ -18,6 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\plugins\vfspk3\archive.h" />
+    <ClInclude Include="..\..\plugins\vfspk3\vfs.h" />
+    <ClInclude Include="..\..\plugins\vfspk3\vfspk3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\plugins\vfspk3\archive.cpp" />
+    <ClCompile Include="..\..\plugins\vfspk3\vfs.cpp" />
+    <ClCompile Include="..\..\plugins\vfspk3\vfspk3.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{7D3130E6-575E-4BBF-B2E4-0173AE4FD4E4}</ProjectGuid>
@@ -76,6 +86,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32;RADIANT_VERSION="WebRadiant";RADIANT_MAJOR_VERSION="1";RADIANT_MINOR_VERSION="9";RADIANT_ABOUTMSG="RADIANT_ABOUTMSG";RADIANT_EXECUTABLE="exe";NOMINMAX;MAKE_MSVC_WORK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -114,8 +125,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

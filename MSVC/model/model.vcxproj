@@ -18,6 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\plugins\model\model.h" />
+    <ClInclude Include="..\..\plugins\model\plugin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\plugins\model\model.cpp" />
+    <ClCompile Include="..\..\plugins\model\plugin.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{A8D0A15C-1A8B-42C7-BDAC-111619091B79}</ProjectGuid>
@@ -76,6 +84,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32;RADIANT_VERSION="WebRadiant";RADIANT_MAJOR_VERSION="1";RADIANT_MINOR_VERSION="9";RADIANT_ABOUTMSG="RADIANT_ABOUTMSG";RADIANT_EXECUTABLE="exe";NOMINMAX;MAKE_MSVC_WORK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -114,8 +123,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

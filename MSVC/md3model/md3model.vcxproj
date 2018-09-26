@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32;RADIANT_VERSION="WebRadiant";RADIANT_MAJOR_VERSION="1";RADIANT_MINOR_VERSION="9";RADIANT_ABOUTMSG="RADIANT_ABOUTMSG";RADIANT_EXECUTABLE="exe";NOMINMAX;MAKE_MSVC_WORK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -115,6 +116,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\plugins\md3model\ident.h" />
+    <ClInclude Include="..\..\plugins\md3model\md2.h" />
+    <ClInclude Include="..\..\plugins\md3model\md3.h" />
+    <ClInclude Include="..\..\plugins\md3model\md3normals.h" />
+    <ClInclude Include="..\..\plugins\md3model\md5.h" />
+    <ClInclude Include="..\..\plugins\md3model\mdc.h" />
+    <ClInclude Include="..\..\plugins\md3model\mdl.h" />
+    <ClInclude Include="..\..\plugins\md3model\mdlformat.h" />
+    <ClInclude Include="..\..\plugins\md3model\mdlimage.h" />
+    <ClInclude Include="..\..\plugins\md3model\mdlnormals.h" />
+    <ClInclude Include="..\..\plugins\md3model\model.h" />
+    <ClInclude Include="..\..\plugins\md3model\plugin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\plugins\md3model\md2.cpp" />
+    <ClCompile Include="..\..\plugins\md3model\md3.cpp" />
+    <ClCompile Include="..\..\plugins\md3model\md3normals.cpp" />
+    <ClCompile Include="..\..\plugins\md3model\md5.cpp" />
+    <ClCompile Include="..\..\plugins\md3model\mdc.cpp" />
+    <ClCompile Include="..\..\plugins\md3model\mdl.cpp" />
+    <ClCompile Include="..\..\plugins\md3model\mdlformat.cpp" />
+    <ClCompile Include="..\..\plugins\md3model\mdlimage.cpp" />
+    <ClCompile Include="..\..\plugins\md3model\mdlnormals.cpp" />
+    <ClCompile Include="..\..\plugins\md3model\model.cpp" />
+    <ClCompile Include="..\..\plugins\md3model\plugin.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
