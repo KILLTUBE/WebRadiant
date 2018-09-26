@@ -558,7 +558,9 @@ typedef LazyStatic<NullSelectedInstance> StaticNullSelectedInstance;
 #include "stringio.h"
 
 void EntityList_Construct(){
-	graph_tree_model_insert( scene_graph_get_tree_model(), StaticNullSelectedInstance::instance() );
+	GraphTreeModel *model = scene_graph_get_tree_model();
+	NullSelectedInstance &instance = StaticNullSelectedInstance::instance();
+	graph_tree_model_insert(model, instance);
 
 	g_EntityList = new EntityList;
 

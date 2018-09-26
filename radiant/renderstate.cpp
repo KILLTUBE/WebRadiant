@@ -1219,7 +1219,10 @@ void render( RenderStateFlags globalstate, const Matrix4& modelview, const Matri
 	//qglGetFloatv(GL_MODELVIEW_MATRIX, reinterpret_cast<float*>(&modelview));
   #endif
 
-	ASSERT_MESSAGE( realised(), "render states are not realised" );
+	if (!realised()) {
+		globalOutputStream() << "render states are not realised\n";
+		return;
+	}
 
 	// global settings that are not set in renderstates
 	glFrontFace( GL_CW );

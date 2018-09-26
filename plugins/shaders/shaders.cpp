@@ -1563,7 +1563,7 @@ void ShaderList_addShaderFile( const char* dirstring ){
 	}
 
 	if ( !found ) {
-		l_shaderfiles = g_slist_append( l_shaderfiles, strdup( dirstring ) );
+		l_shaderfiles = g_slist_append( l_shaderfiles, _strdup( dirstring ) );
 	}
 }
 

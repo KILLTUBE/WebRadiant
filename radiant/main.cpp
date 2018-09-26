@@ -667,7 +667,9 @@ int main( int argc, char* argv[] ){
 
 	// load up shaders now that we have the map loaded
 	// eviltypeguy
+	#ifndef MAKE_MSVC_WORK
 	TextureBrowser_ShowStartupShaders( GlobalTextureBrowser() );
+	#endif
 
 
 	remove_local_pid();

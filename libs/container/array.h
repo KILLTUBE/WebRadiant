@@ -25,7 +25,10 @@
 #include <cstddef>
 #include <algorithm>
 
+#ifdef MAKE_MSVC_WORK
 #include "../debugging/debugging.h"
+#endif
+
 #include "memory/allocator.h"
 
 /// \brief An array whose size is variable at run-time.

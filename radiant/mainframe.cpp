@@ -635,7 +635,8 @@ void Radiant_Initialise(){
 
 	Preferences_Load();
 
-	bool success = Radiant_Construct( GlobalModuleServer_get() );
+	ModuleServer& modserver = GlobalModuleServer_get();
+	bool success = Radiant_Construct( modserver );
 	ASSERT_MESSAGE( success, "module system failed to initialise - see radiant.log for error messages" );
 
 	g_gameToolsPathObservers.realise();

@@ -1101,6 +1101,7 @@ void graph_tree_model_row_changed( GraphTreeModel* model, GraphTreeNode::iterato
 
 void graph_tree_model_row_inserted( GraphTreeModel* model, GraphTreeNode::iterator i ){
 	GtkTreeIter iter;
+	memset(&iter, 0, sizeof(GtkTreeIter));
 	graph_iterator_write_tree_iter( i, &iter );
 
 	GtkTreePath* tree_path = graph_tree_model_get_path( GTK_TREE_MODEL( model ), &iter );
@@ -1112,6 +1113,7 @@ void graph_tree_model_row_inserted( GraphTreeModel* model, GraphTreeNode::iterat
 
 void graph_tree_model_row_deleted( GraphTreeModel* model, GraphTreeNode::iterator i ){
 	GtkTreeIter iter;
+	memset(&iter, 0, sizeof(GtkTreeIter));
 	graph_iterator_write_tree_iter( i, &iter );
 
 	GtkTreePath* tree_path = graph_tree_model_get_path( GTK_TREE_MODEL( model ), &iter );
@@ -1211,12 +1213,17 @@ void graph_tree_model_set_name( const scene::Instance& instance, const char* nam
 
 void graph_tree_model_insert( GraphTreeModel* model, const scene::Instance& instance ){
 	GraphTreeNode* parent = graph_tree_model_find_parent( model, instance.path() );
-
-	GraphTreeNode::iterator i = parent->insert( GraphTreeNode::value_type( GraphTreeNode::key_type( node_get_name_safe( instance.path().top().get() ), instance.path().top().get_pointer() ), new GraphTreeNode( const_cast<scene::Instance&>( instance ) ) ) );
-
+	auto val1 =  GraphTreeNode::key_type( node_get_name_safe( instance.path().top().get() ), instance.path().top().get_pointer() );
+	auto val2 = new GraphTreeNode( const_cast<scene::Instance&>( instance ) );
+	auto value = GraphTreeNode::value_type(val1, val2) ;
+	GraphTreeNode::iterator i = parent->insert( value );
+	// this crashes in MSVC
+	#ifndef MAKE_MSVC_WORK
 	graph_tree_model_row_inserted( model, i );
-
-	node_attach_name_changed_callback( instance.path().top(), ConstReferenceCaller1<scene::Instance, const char*, graph_tree_model_set_name>( instance ) );
+	auto &node = instance.path().top();
+	auto callback = ConstReferenceCaller1<scene::Instance, const char*, graph_tree_model_set_name>( instance );
+	node_attach_name_changed_callback(node, callback);
+	#endif
 }
 
 void graph_tree_model_erase( GraphTreeModel* model, const scene::Instance& instance ){

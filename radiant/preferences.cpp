@@ -309,12 +309,33 @@ void CGameDialog::CreateGlobalFrame( PreferencesPage& page ){
 	{
 		games.push_back( ( *i )->getRequiredKeyValue( "name" ) );
 	}
+
+#ifdef MAKE_MSVC_WORK
+	const char **first = NULL;
+	const char **last = NULL;
+	int i=0;
+	int lastI = games.size() - 1;
+	for (auto game : games) {
+		if (i == 0)
+			first = &game;
+		if (i == lastI)
+			last = &game;
+		i++;
+	}
+	page.appendCombo(
+		"Select the game",
+		StringArrayRange( first, last ),
+		ReferenceCaller1<CGameDialog, int, CGameDialog_GameFileImport>( *this ),
+		ReferenceCaller1<CGameDialog, const IntImportCallback&, CGameDialog_GameFileExport>( *this )
+		);
+#else
 	page.appendCombo(
 		"Select the game",
 		StringArrayRange( &( *games.begin() ), &( *games.end() ) ),
 		ReferenceCaller1<CGameDialog, int, CGameDialog_GameFileImport>( *this ),
 		ReferenceCaller1<CGameDialog, const IntImportCallback&, CGameDialog_GameFileExport>( *this )
 		);
+#endif
 	page.appendCheckBox( "Startup", "Show Global Preferences", m_bGamePrompt );
 }
 
@@ -433,6 +454,12 @@ void CGameDialog::Init(){
 		std::list<CGameDescription *>::iterator iGame;
 		for ( iGame = mGames.begin(); iGame != mGames.end(); ++iGame )
 		{
+			#ifdef MAKE_MSVC_WORK
+			if ((*iGame)->mGameFile == "oa.game") {
+				currentGameDescription = ( *iGame );
+				break;
+			}
+			#endif
 			if ( ( *iGame )->mGameFile == m_sGameFile ) {
 				currentGameDescription = ( *iGame );
 				break;
